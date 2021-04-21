@@ -15,5 +15,25 @@ class User(db.Model, UserLog,):
             "Email:": self.email,
             "password": self.password
         } 
-        
+    
+
+class Exercise(db.Model):
+    exercise_ID = db.Column(db.Integer, primary_key=True)
+    exercise_name = db.Column(db.String(120), nullable=False)
+    exercise_equipment = db.Column(db.String(120), nullable=False)
+    exercise_type = db.Column(db.String(120), nullable=False)
+    muscle_work = db.Column(db.String(120), nullable=False)
+    example = db.Column(db.String(200), nullable=False)
+    modify = db.Column(db.String(120), nullable=False)
+
+    def toDict(self):
+        return {
+            "id": self.exercise_ID,
+            "Exercise": self.exercise_name,
+            "Equipment": self.exercise_equipment,
+            "Exercise Type": self.exercise_type,
+            "Example": self.example,
+            "Modifications": self.mods
+        }
+
         
