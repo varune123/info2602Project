@@ -1,0 +1,11 @@
+{
+	"id": "af99e18d-e0b6-47aa-b586-2cec222c581a",
+	"name": "info2602 Project",
+	"values": [
+		{
+			"key": "host",
+			"value": "https://8080-bronze-swordfish-qh92vtrb.ws-us03.gitpod.io",
+			"enabled": true
+		}
+	]
+}
