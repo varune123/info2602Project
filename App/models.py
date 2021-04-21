@@ -17,6 +17,3 @@ class User(db.Model, UserLog,):
         } 
         
         
- # hashes the password parameter and stores it in the object
-    def set_password(self, password):
-        self.password = generate_password_hash(password, method='sha256')
