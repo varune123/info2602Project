@@ -1,5 +1,8 @@
 FROM gitpod/workspace-full
 
+USER root
+RUN sudo apt-get update
+
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
 # RUN brew install bastet
